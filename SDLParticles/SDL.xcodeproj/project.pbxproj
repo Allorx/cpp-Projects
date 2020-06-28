@@ -7,18 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		FA0D6B5D24A69586008F322A /* libSDL2-2.0.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = FA0D6B5C24A69586008F322A /* libSDL2-2.0.0.dylib */; };
-		FA0D6B5F24A69947008F322A /* libSDL2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = FA0D6B5E24A69947008F322A /* libSDL2.dylib */; };
 		FA45DA4620D85C2E000AF697 /* screen.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FA45DA4420D85C2E000AF697 /* screen.cpp */; };
 		FA5132B620DABAB300EFDA5F /* particle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FA5132B420DABAB300EFDA5F /* particle.cpp */; };
 		FA5132B920DADCBD00EFDA5F /* Swarm.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FA5132B720DADCBD00EFDA5F /* Swarm.cpp */; };
+		FA7DF12524A921D3009A4C03 /* libSDL2-2.0.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = FA0D6B5C24A69586008F322A /* libSDL2-2.0.0.dylib */; };
+		FA7DF12624A921D7009A4C03 /* libSDL2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = FA0D6B5E24A69947008F322A /* libSDL2.dylib */; };
 		FAD7D3DE20D6D44E0037BA33 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FAD7D3DD20D6D44E0037BA33 /* main.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		FAD7D3D820D6D44E0037BA33 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
+			buildActionMask = 8;
 			dstPath = /usr/share/man/man1/;
 			dstSubfolderSpec = 0;
 			files = (
@@ -45,8 +45,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FA0D6B5D24A69586008F322A /* libSDL2-2.0.0.dylib in Frameworks */,
-				FA0D6B5F24A69947008F322A /* libSDL2.dylib in Frameworks */,
+				FA7DF12524A921D3009A4C03 /* libSDL2-2.0.0.dylib in Frameworks */,
+				FA7DF12624A921D7009A4C03 /* libSDL2.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
