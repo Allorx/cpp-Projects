@@ -288,7 +288,6 @@
 					/usr/local/include/SDL2,
 					/usr/local/Cellar/sdl2/2.0.12_1/lib,
 				);
-				"LIBRARY_SEARCH_PATHS[arch=*]" = /usr/local/include/SDL2;
 				OTHER_CFLAGS = "-I/usr/local/include/SDL2";
 				OTHER_LDFLAGS = "-L/usr/local/lib";
 				PRODUCT_NAME = "$(TARGET_NAME)";
