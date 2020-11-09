@@ -22,6 +22,22 @@ SDL.h
 Swarm.hpp
 /Users/Alex/Documents/GitHub/cpp-Projects/SDLParticles/SDL/src/Swarm.hpp
 
+/Users/Alex/Documents/GitHub/cpp-Projects/SDLParticles/SDL/src/main.cpp
+iostream
+-
+SDL.h
+-
+math.h
+-
+stdlib.h
+-
+screen.hpp
+/Users/Alex/Documents/GitHub/cpp-Projects/SDLParticles/SDL/src/screen.hpp
+Swarm.hpp
+/Users/Alex/Documents/GitHub/cpp-Projects/SDLParticles/SDL/src/Swarm.hpp
+time.h
+-
+
 /Users/Alex/Documents/GitHub/cpp-Projects/SDLParticles/SDL/src/particle.cpp
 particle.hpp
 /Users/Alex/Documents/GitHub/cpp-Projects/SDLParticles/SDL/src/particle.hpp
