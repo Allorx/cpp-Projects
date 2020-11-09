@@ -6,7 +6,11 @@ enable_testing()
 
 #Header files 
 include_directories(include)
-include_directories(${CMAKE_SOURCE_DIR}/include/SDL2)
+IF(WIN32)
+    include_directories(${CMAKE_SOURCE_DIR}/include/SDL2Win10)
+ELSE()
+    include_directories(${CMAKE_SOURCE_DIR}/include/SDL2)
+ENDIF()
 
 #set locations of install
 set(EXECUTABLE_OUTPUT_PATH ${CMAKE_BINARY_DIR})
@@ -18,7 +22,12 @@ file(GLOB SOURCES "src/*.cpp")
 add_executable(Game ${SOURCES})
 
 #Link libraries
-target_link_libraries(Game ${CMAKE_SOURCE_DIR}/lib/libSDL2-2.0.0.dylib)
+IF(WIN32)
+    target_link_libraries(Game ${CMAKE_SOURCE_DIR}/lib/Win10/SDL2.lib)
+ELSE()
+    target_link_libraries(Game ${CMAKE_SOURCE_DIR}/lib/libSDL2-2.0.0.dylib)
+ENDIF()
+
 
 set(CMAKE_INSTALL_RPATH "")
 set(CPACK_PROJECT_NAME ${PROJECT_NAME})
