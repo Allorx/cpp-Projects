@@ -4,6 +4,8 @@ project(Game VERSION 0.1.0)
 include(CTest)
 enable_testing()
 
+#SDL2 location set on WIN10 ***********
+set(SDL2_DIR "C:/Users/Alex/Desktop/TechyStuff/SDL2-2.0.12")
 #Finds and sets location of SDL2
 find_package(SDL2 REQUIRED)
 
