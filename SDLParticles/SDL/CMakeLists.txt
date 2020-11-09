@@ -21,6 +21,8 @@ add_executable(Game ${SOURCES})
 #Link libraries
 target_link_libraries(Game ${SDL2_LIBRARIES})
 
+set(CMAKE_BUILD_RPATH_USE_ORIGIN = TRUE)
+SET(CMAKE_INSTALL_RPATH "$ORIGIN/lib")
 
 set(CPACK_PROJECT_NAME ${PROJECT_NAME})
 set(CPACK_PROJECT_VERSION ${PROJECT_VERSION})
