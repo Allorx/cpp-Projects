@@ -4,14 +4,13 @@ project(Game VERSION 0.1.0)
 include(CTest)
 enable_testing()
 
-#SDL2 location set on WIN10 ***********
-#set(SDL2_DIR "C:/Users/Alex/Desktop/TechyStuff/SDL2-2.0.12")
-#Finds and sets location of SDL2
-find_package(SDL2 REQUIRED)
-
 #Header files 
 include_directories(include)
-include_directories(${SDL2_INCLUDE_DIRS})
+include_directories(${CMAKE_SOURCE_DIR}/include/SDL2)
+
+#set locations of install
+set(EXECUTABLE_OUTPUT_PATH ${CMAKE_BINARY_DIR})
+set(LIBRARY_OUTPUT_PATH ${CMAKE_BINARY_DIR})
 
 #Set src location for files to compile
 file(GLOB SOURCES "src/*.cpp")
@@ -19,11 +18,9 @@ file(GLOB SOURCES "src/*.cpp")
 add_executable(Game ${SOURCES})
 
 #Link libraries
-target_link_libraries(Game ${SDL2_LIBRARIES})
+target_link_libraries(Game ${CMAKE_SOURCE_DIR}/lib/libSDL2-2.0.0.dylib)
 
-set(CMAKE_BUILD_RPATH_USE_ORIGIN = TRUE)
-SET(CMAKE_INSTALL_RPATH "$ORIGIN/lib")
-
+set(CMAKE_INSTALL_RPATH "")
 set(CPACK_PROJECT_NAME ${PROJECT_NAME})
 set(CPACK_PROJECT_VERSION ${PROJECT_VERSION})
 include(CPack)

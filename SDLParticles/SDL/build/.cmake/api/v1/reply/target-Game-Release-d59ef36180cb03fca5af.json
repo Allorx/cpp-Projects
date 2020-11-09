@@ -26,25 +26,25 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 19,
+				"line" : 18,
 				"parent" : 0
 			},
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 22,
+				"line" : 21,
 				"parent" : 0
 			},
 			{
 				"command" : 2,
 				"file" : 0,
-				"line" : 13,
+				"line" : 8,
 				"parent" : 0
 			},
 			{
 				"command" : 2,
 				"file" : 0,
-				"line" : 14,
+				"line" : 9,
 				"parent" : 0
 			}
 		]
@@ -66,7 +66,7 @@
 				},
 				{
 					"backtrace" : 4,
-					"path" : "/usr/local/Cellar/sdl2/2.0.12_1/include/SDL2"
+					"path" : "/Users/Alex/Documents/GitHub/cpp-Projects/SDLParticles/SDL/include/SDL2"
 				}
 			],
 			"language" : "CXX",
@@ -94,7 +94,7 @@
 			},
 			{
 				"backtrace" : 2,
-				"fragment" : "-L/usr/local/Cellar/sdl2/2.0.12_1/lib  -lSDL2",
+				"fragment" : "../lib/libSDL2-2.0.0.dylib",
 				"role" : "libraries"
 			}
 		],

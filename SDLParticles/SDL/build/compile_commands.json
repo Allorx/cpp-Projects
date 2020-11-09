@@ -1,22 +1,22 @@
 [
 {
   "directory": "/Users/Alex/Documents/GitHub/cpp-Projects/SDLParticles/SDL/build",
-  "command": "/usr/bin/clang++  -I/Users/Alex/Documents/GitHub/cpp-Projects/SDLParticles/SDL/include -I/usr/local/Cellar/sdl2/2.0.12_1/include/SDL2 -O3 -DNDEBUG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -o CMakeFiles/Game.dir/src/Swarm.cpp.o -c /Users/Alex/Documents/GitHub/cpp-Projects/SDLParticles/SDL/src/Swarm.cpp",
+  "command": "/usr/bin/clang++  -I/Users/Alex/Documents/GitHub/cpp-Projects/SDLParticles/SDL/include -I/Users/Alex/Documents/GitHub/cpp-Projects/SDLParticles/SDL/include/SDL2 -O3 -DNDEBUG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -o CMakeFiles/Game.dir/src/Swarm.cpp.o -c /Users/Alex/Documents/GitHub/cpp-Projects/SDLParticles/SDL/src/Swarm.cpp",
   "file": "/Users/Alex/Documents/GitHub/cpp-Projects/SDLParticles/SDL/src/Swarm.cpp"
 },
 {
   "directory": "/Users/Alex/Documents/GitHub/cpp-Projects/SDLParticles/SDL/build",
-  "command": "/usr/bin/clang++  -I/Users/Alex/Documents/GitHub/cpp-Projects/SDLParticles/SDL/include -I/usr/local/Cellar/sdl2/2.0.12_1/include/SDL2 -O3 -DNDEBUG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -o CMakeFiles/Game.dir/src/main.cpp.o -c /Users/Alex/Documents/GitHub/cpp-Projects/SDLParticles/SDL/src/main.cpp",
+  "command": "/usr/bin/clang++  -I/Users/Alex/Documents/GitHub/cpp-Projects/SDLParticles/SDL/include -I/Users/Alex/Documents/GitHub/cpp-Projects/SDLParticles/SDL/include/SDL2 -O3 -DNDEBUG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -o CMakeFiles/Game.dir/src/main.cpp.o -c /Users/Alex/Documents/GitHub/cpp-Projects/SDLParticles/SDL/src/main.cpp",
   "file": "/Users/Alex/Documents/GitHub/cpp-Projects/SDLParticles/SDL/src/main.cpp"
 },
 {
   "directory": "/Users/Alex/Documents/GitHub/cpp-Projects/SDLParticles/SDL/build",
-  "command": "/usr/bin/clang++  -I/Users/Alex/Documents/GitHub/cpp-Projects/SDLParticles/SDL/include -I/usr/local/Cellar/sdl2/2.0.12_1/include/SDL2 -O3 -DNDEBUG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -o CMakeFiles/Game.dir/src/particle.cpp.o -c /Users/Alex/Documents/GitHub/cpp-Projects/SDLParticles/SDL/src/particle.cpp",
+  "command": "/usr/bin/clang++  -I/Users/Alex/Documents/GitHub/cpp-Projects/SDLParticles/SDL/include -I/Users/Alex/Documents/GitHub/cpp-Projects/SDLParticles/SDL/include/SDL2 -O3 -DNDEBUG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -o CMakeFiles/Game.dir/src/particle.cpp.o -c /Users/Alex/Documents/GitHub/cpp-Projects/SDLParticles/SDL/src/particle.cpp",
   "file": "/Users/Alex/Documents/GitHub/cpp-Projects/SDLParticles/SDL/src/particle.cpp"
 },
 {
   "directory": "/Users/Alex/Documents/GitHub/cpp-Projects/SDLParticles/SDL/build",
-  "command": "/usr/bin/clang++  -I/Users/Alex/Documents/GitHub/cpp-Projects/SDLParticles/SDL/include -I/usr/local/Cellar/sdl2/2.0.12_1/include/SDL2 -O3 -DNDEBUG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -o CMakeFiles/Game.dir/src/screen.cpp.o -c /Users/Alex/Documents/GitHub/cpp-Projects/SDLParticles/SDL/src/screen.cpp",
+  "command": "/usr/bin/clang++  -I/Users/Alex/Documents/GitHub/cpp-Projects/SDLParticles/SDL/include -I/Users/Alex/Documents/GitHub/cpp-Projects/SDLParticles/SDL/include/SDL2 -O3 -DNDEBUG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -o CMakeFiles/Game.dir/src/screen.cpp.o -c /Users/Alex/Documents/GitHub/cpp-Projects/SDLParticles/SDL/src/screen.cpp",
   "file": "/Users/Alex/Documents/GitHub/cpp-Projects/SDLParticles/SDL/src/screen.cpp"
 }
 ]
