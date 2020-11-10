@@ -4,17 +4,17 @@
 
 
 # Configuration directories and files
-SourceDirectory: D:/Documents/Github/cpp-Projects/SDLParticles/SDL
-BuildDirectory: D:/Documents/Github/cpp-Projects/SDLParticles/SDL/build
+SourceDirectory: /Users/Alex/Documents/GitHub/cpp-Projects/SDLParticles/SDL
+BuildDirectory: /Users/Alex/Documents/GitHub/cpp-Projects/SDLParticles/SDL/build
 
 # Where to place the cost data store
 CostDataFile: 
 
 # Site is something like machine.domain, i.e. pragmatic.crd
-Site: ORIONSSHOES
+Site: Mackey.local
 
 # Build name is osname-revision-compiler, i.e. Linux-2.4.2-2smp-c++
-BuildName: Win32-MSBuild
+BuildName: Darwin-clang++
 
 # Subprojects
 LabelsForSubprojects: 
@@ -26,8 +26,8 @@ SubmitURL: http://
 NightlyStartTime: 00:00:00 EDT
 
 # Commands for the build/test/submit cycle
-ConfigureCommand: "C:/Program Files/CMake/bin/cmake.exe" "D:/Documents/Github/cpp-Projects/SDLParticles/SDL"
-MakeCommand: "C:\Program Files\CMake\bin\cmake.exe" --build . --config "${CTEST_CONFIGURATION_TYPE}"
+ConfigureCommand: "/usr/local/Cellar/cmake/3.18.4/bin/cmake" "/Users/Alex/Documents/GitHub/cpp-Projects/SDLParticles/SDL"
+MakeCommand: /usr/local/Cellar/cmake/3.18.4/bin/cmake --build . --config "${CTEST_CONFIGURATION_TYPE}" -- -i
 DefaultCTestConfigurationType: Release
 
 # version control
@@ -44,7 +44,7 @@ SVNOptions:
 SVNUpdateOptions: 
 
 # Git options
-GITCommand: GITCOMMAND-NOTFOUND
+GITCommand: /usr/bin/git
 GITInitSubmodules: 
 GITUpdateOptions: 
 GITUpdateCustom: 
@@ -62,8 +62,8 @@ UpdateOptions:
 UpdateType: 
 
 # Compiler info
-Compiler: C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.27.29110/bin/Hostx64/x64/cl.exe
-CompilerVersion: 19.27.29112.0
+Compiler: /usr/bin/clang++
+CompilerVersion: 12.0.0.12000032
 
 # Dynamic analysis (MemCheck)
 PurifyCommand: 
@@ -78,7 +78,7 @@ MemoryCheckCommandOptions:
 MemoryCheckSuppressionFile: 
 
 # Coverage
-CoverageCommand: COVERAGE_COMMAND-NOTFOUND
+CoverageCommand: /usr/bin/gcov
 CoverageExtraFlags: -l
 
 # Cluster commands
@@ -96,7 +96,7 @@ TimeOut: 1500
 # so would cause the system load to exceed this value.
 TestLoad: 
 
-UseLaunchers: 0
+UseLaunchers: 
 CurlOptions: 
 # warning, if you add new options here that have to do with submit,
 # you have to update cmCTestSubmitCommand.cxx
