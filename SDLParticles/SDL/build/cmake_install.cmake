@@ -38,8 +38,7 @@ if(NOT DEFINED CMAKE_OBJDUMP)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  include(BundleUtilities) 
-            fixup_bundle(Game.app "" "")
+  include("/Users/Alex/Documents/GitHub/cpp-Projects/SDLParticles/SDL/BundleFixup.cmake")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)

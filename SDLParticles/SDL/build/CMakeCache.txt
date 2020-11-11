@@ -351,6 +351,18 @@ SLURM_SRUN_COMMAND:FILEPATH=SLURM_SRUN_COMMAND-NOTFOUND
 //Path to a program.
 SVNCOMMAND:FILEPATH=SVNCOMMAND-NOTFOUND
 
+//Path to a program.
+file_cmd:FILEPATH=/usr/bin/file
+
+//Path to a program.
+find_cmd:FILEPATH=/usr/bin/find
+
+//Path to a program.
+gp_cmd:FILEPATH=/usr/bin/otool
+
+//Path to a program.
+otool_cmd:FILEPATH=/usr/bin/otool
+
 
 ########################
 # INTERNAL cache entries
@@ -567,4 +579,10 @@ SLURM_SBATCH_COMMAND-ADVANCED:INTERNAL=1
 SLURM_SRUN_COMMAND-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: SVNCOMMAND
 SVNCOMMAND-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: file_cmd
+file_cmd-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: find_cmd
+find_cmd-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: otool_cmd
+otool_cmd-ADVANCED:INTERNAL=1
 
