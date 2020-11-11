@@ -32,6 +32,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/usr/local/Cellar/cmake/3.18.4/share/cmake/Modules/Compiler/GNU.cmake"
   "/usr/local/Cellar/cmake/3.18.4/share/cmake/Modules/DartConfiguration.tcl.in"
   "/usr/local/Cellar/cmake/3.18.4/share/cmake/Modules/Internal/CMakeCheckCompilerFlag.cmake"
+  "/usr/local/Cellar/cmake/3.18.4/share/cmake/Modules/MacOSXBundleInfo.plist.in"
   "/usr/local/Cellar/cmake/3.18.4/share/cmake/Modules/Platform/Apple-AppleClang-C.cmake"
   "/usr/local/Cellar/cmake/3.18.4/share/cmake/Modules/Platform/Apple-AppleClang-CXX.cmake"
   "/usr/local/Cellar/cmake/3.18.4/share/cmake/Modules/Platform/Apple-Clang-C.cmake"
@@ -41,8 +42,6 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/usr/local/Cellar/cmake/3.18.4/share/cmake/Modules/Platform/Darwin.cmake"
   "/usr/local/Cellar/cmake/3.18.4/share/cmake/Modules/Platform/UnixPaths.cmake"
   "/usr/local/Cellar/cmake/3.18.4/share/cmake/Templates/CPackConfig.cmake.in"
-  "/usr/local/lib/cmake/SDL2/sdl2-config-version.cmake"
-  "/usr/local/lib/cmake/SDL2/sdl2-config.cmake"
   )
 
 # The corresponding makefile is:
@@ -56,6 +55,9 @@ set(CMAKE_MAKEFILE_PRODUCTS
   "DartConfiguration.tcl"
   "CPackConfig.cmake"
   "CPackSourceConfig.cmake"
+  "MacOS/Game.app/Contents/MacOS"
+  "MacOS/Game.app/Contents/Info.plist"
+  "MacOS/Game.app/Contents/Info.plist"
   "CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 

@@ -336,14 +336,8 @@ MEMORYCHECK_SUPPRESSIONS_FILE:FILEPATH=
 //Path to a program.
 P4COMMAND:FILEPATH=P4COMMAND-NOTFOUND
 
-//The directory containing a CMake configuration file for SDL2-static.
-SDL2-static_DIR:PATH=SDL2-static_DIR-NOTFOUND
-
-//The directory containing a CMake configuration file for SDL2::SDL2-static.
-"SDL2::SDL2-static_DIR":PATH=SDL2::SDL2-static_DIR-NOTFOUND
-
-//The directory containing a CMake configuration file for SDL2.
-SDL2_DIR:PATH=/usr/local/lib/cmake/SDL2
+//Path to a library.
+SDL2lib:FILEPATH=SDL2lib-NOTFOUND
 
 //Name of the computer/site where compile is being run
 SITE:STRING=Mackey.local

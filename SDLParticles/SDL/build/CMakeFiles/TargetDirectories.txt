@@ -1,3 +1,6 @@
+/Users/Alex/Documents/GitHub/cpp-Projects/SDLParticles/SDL/build/CMakeFiles/install/strip.dir
+/Users/Alex/Documents/GitHub/cpp-Projects/SDLParticles/SDL/build/CMakeFiles/install/local.dir
+/Users/Alex/Documents/GitHub/cpp-Projects/SDLParticles/SDL/build/CMakeFiles/list_install_components.dir
 /Users/Alex/Documents/GitHub/cpp-Projects/SDLParticles/SDL/build/CMakeFiles/rebuild_cache.dir
 /Users/Alex/Documents/GitHub/cpp-Projects/SDLParticles/SDL/build/CMakeFiles/Game.dir
 /Users/Alex/Documents/GitHub/cpp-Projects/SDLParticles/SDL/build/CMakeFiles/package_source.dir
@@ -10,6 +13,7 @@
 /Users/Alex/Documents/GitHub/cpp-Projects/SDLParticles/SDL/build/CMakeFiles/ExperimentalSubmit.dir
 /Users/Alex/Documents/GitHub/cpp-Projects/SDLParticles/SDL/build/CMakeFiles/ContinuousUpdate.dir
 /Users/Alex/Documents/GitHub/cpp-Projects/SDLParticles/SDL/build/CMakeFiles/ExperimentalUpdate.dir
+/Users/Alex/Documents/GitHub/cpp-Projects/SDLParticles/SDL/build/CMakeFiles/install.dir
 /Users/Alex/Documents/GitHub/cpp-Projects/SDLParticles/SDL/build/CMakeFiles/ExperimentalStart.dir
 /Users/Alex/Documents/GitHub/cpp-Projects/SDLParticles/SDL/build/CMakeFiles/ContinuousSubmit.dir
 /Users/Alex/Documents/GitHub/cpp-Projects/SDLParticles/SDL/build/CMakeFiles/ExperimentalTest.dir

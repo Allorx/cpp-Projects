@@ -4,35 +4,47 @@ project(Game VERSION 0.1.0)
 include(CTest)
 enable_testing()
 
-#External packages
-#IF(WIN32)
-#    set(SDL2_DIR C:/Users/Alex/Desktop/TechyStuff)
-#ELSEIF(APPLE)
-    find_package(SDL2 REQUIRED)
-#ENDIF()
+set(CMAKE_INSTALL_PREFIX ${CMAKE_BINARY_DIR})
 
-#Header files 
-include_directories(include)
-include_directories(${SDL2_INCLUDE_DIRS})
+#src files
+file(GLOB Game_src
+    src/*.h
+    src/*.cpp
+)
 
-#Set src location for files to compile
-file(GLOB SOURCES "src/*.cpp")
+if(APPLE)
+    #Setup output locations
+    set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${PROJECT_SOURCE_DIR}/build/MacOS)
+    set(CMAKE_ARCHIVE_OUTPUT_DIRECTORY ${PROJECT_SOURCE_DIR}/build/MacOS)
+    set(CMAKE_LIBRARY_OUTPUT_DIRECTORY ${PROJECT_SOURCE_DIR}/build/MacOS)
 
-add_executable(Game ${SOURCES})
+    #Compile and link flag locations
+    include_directories(${PROJECT_SOURCE_DIR}/MacOS/include)
+    find_library(SDL2lib ${PROJECT_SOURCE_DIR}/MacOS/lib)
 
-#Link static libraries
-IF(APPLE)
-    target_link_libraries(Game ${SDL2_LIBRARIES} -lSDL2  -lm -liconv  -Wl,-framework,CoreAudio -Wl,-framework,AudioToolbox -Wl,-framework,ForceFeedback -lobjc -Wl,-framework,CoreVideo -Wl,-framework,Cocoa -Wl,-framework,Carbon -Wl,-framework,IOKit -Wl,-weak_framework,QuartzCore -Wl,-weak_framework,Metal)
-ELSEIF(WIN32)
-    target_link_libraries(Game ${SDL2_LIBRARIES})
-    #Copy the .dll file to the same folder as the executable
-    add_custom_command(
-        TARGET ${PROJECT_NAME} POST_BUILD
-        COMMAND ${CMAKE_COMMAND} -E copy_if_different
-        $<TARGET_FILE:${SDL2_LIBRARIES}s>
-        $<TARGET_FILE_DIR:${PROJECT_NAME}>
-        VERBATIM)
-ENDIF()
+    #Compiling and linking
+    add_executable(Game MACOSX_BUNDLE ${Game_src})
+    target_link_libraries(Game ${PROJECT_SOURCE_DIR}/MacOS/lib/libSDL2-2.0.0.dylib)
+
+    #Fix and copy dependencies to bundle
+    install(CODE "include(BundleUtilities) 
+            fixup_bundle(Game.app \"\" \"\")" )
+
+elseif(WIN32)
+    #Setup output locations
+    set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${PROJECT_SOURCE_DIR}/build/Win10)
+    set(CMAKE_ARCHIVE_OUTPUT_DIRECTORY ${PROJECT_SOURCE_DIR}/build/Win10)
+    set(CMAKE_LIBRARY_OUTPUT_DIRECTORY ${PROJECT_SOURCE_DIR}/build/Win10)
+
+    #Compile and link flag locations
+    include_directories(${PROJECT_SOURCE_DIR}/Win10/include)
+    #add_subdirectory(SDL2lib ${PROJECT_SOURCE_DIR}/Win10/lib)
+    find_library(SDL2lib ${PROJECT_SOURCE_DIR}/Win10/lib)
+
+    #Compiling and linking
+    add_executable(Game WIN32 ${Game_src})
+    target_link_libraries(Game ${PROJECT_SOURCE_DIR}/Win10/lib/SDL2.lib)
+endif()
 
 
 set(CPACK_PROJECT_NAME ${PROJECT_NAME})

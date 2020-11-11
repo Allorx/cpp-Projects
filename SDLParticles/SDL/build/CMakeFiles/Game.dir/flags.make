@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/clang++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/Users/Alex/Documents/GitHub/cpp-Projects/SDLParticles/SDL/include -I/usr/local/Cellar/sdl2/2.0.12_1/include/SDL2
+CXX_INCLUDES = -I/Users/Alex/Documents/GitHub/cpp-Projects/SDLParticles/SDL/MacOS/include
 
 CXX_FLAGS = -O3 -DNDEBUG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk
 
