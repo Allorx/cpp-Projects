@@ -14,5 +14,8 @@ if(APPLE)
     fixup_bundle("${BUNDLE_APPS}" "" "${BUNDLE_DIRS}")
 
 elseif(WIN32)
+    set(BUNDLE_APPS ${PROJECT_SOURCE_DIR}/build/Windows/Release)
+    set(BUNDLE_DIRS ${PROJECT_SOURCE_DIR}/Windows/lib/SDL2.dll)
+    file(COPY ${BUNDLE_DIRS} DESTINATION ${BUNDLE_APPS})
 
 endif()
