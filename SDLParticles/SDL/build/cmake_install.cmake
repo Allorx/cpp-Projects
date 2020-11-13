@@ -1,8 +1,8 @@
-# Install script for directory: D:/Documents/Github/cpp-Projects/SDLParticles/SDL
+# Install script for directory: /Users/Alex/Documents/GitHub/cpp-Projects/SDLParticles/SDL
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "D:/Documents/Github/cpp-Projects/SDLParticles/SDL/build")
+  set(CMAKE_INSTALL_PREFIX "/Users/Alex/Documents/GitHub/cpp-Projects/SDLParticles/SDL/build")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -32,8 +32,13 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
   set(CMAKE_CROSSCOMPILING "FALSE")
 endif()
 
+# Set default install directory permissions.
+if(NOT DEFINED CMAKE_OBJDUMP)
+  set(CMAKE_OBJDUMP "/usr/bin/objdump")
+endif()
+
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  include("D:/Documents/Github/cpp-Projects/SDLParticles/SDL/BundleFixup.cmake")
+  include("/Users/Alex/Documents/GitHub/cpp-Projects/SDLParticles/SDL/BundleFixup.cmake")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)
@@ -44,5 +49,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "D:/Documents/Github/cpp-Projects/SDLParticles/SDL/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/Users/Alex/Documents/GitHub/cpp-Projects/SDLParticles/SDL/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
