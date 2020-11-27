@@ -40,10 +40,13 @@ elseif(WIN32)
     
 endif()
 
-#INSTALLATION: When build complete uncomment following lines to fix and copy dependencies to bundle
-    include(${PROJECT_SOURCE_DIR}/BundleFixup.cmake)
-    install(SCRIPT ${PROJECT_SOURCE_DIR}/BundleFixup.cmake)
+#INSTALLATION: When build complete uncomment following lines and rebuild to fix and copy dependencies to bundle
+#This is done so an installer is not needed and the app is bundled and sandboxed before distributing
 
+#    include(${PROJECT_SOURCE_DIR}/BundleFixup.cmake)
+#    install(SCRIPT ${PROJECT_SOURCE_DIR}/BundleFixup.cmake)
+
+#INSTALLATION
 
 
 set(CPACK_PROJECT_NAME ${PROJECT_NAME})
