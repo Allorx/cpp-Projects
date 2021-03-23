@@ -30,7 +30,7 @@ int main()
     int sHeight = Screen::SCREEN_H / 2;
 
     while (true)
-    {
+    { 
         int timeElapsed = SDL_GetTicks();
 
         const Particle *const pParticles = swarm1.getParticles();
