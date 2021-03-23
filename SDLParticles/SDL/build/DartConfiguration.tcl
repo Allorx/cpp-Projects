@@ -26,7 +26,7 @@ SubmitURL: http://
 NightlyStartTime: 00:00:00 EDT
 
 # Commands for the build/test/submit cycle
-ConfigureCommand: "/usr/local/Cellar/cmake/3.19.0_1/bin/cmake" "/Users/Alex/Documents/GitHub/cpp-Projects/SDLParticles/SDL"
+ConfigureCommand: "/usr/local/Cellar/cmake/3.19.7/bin/cmake" "/Users/Alex/Documents/GitHub/cpp-Projects/SDLParticles/SDL"
 MakeCommand: /usr/local/Cellar/cmake/3.18.4/bin/cmake --build . --config "${CTEST_CONFIGURATION_TYPE}" -- -i
 DefaultCTestConfigurationType: Release
 

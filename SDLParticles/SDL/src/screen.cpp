@@ -10,9 +10,7 @@
 
 namespace sc
 {
-    Screen::Screen() : m_window(NULL), m_renderer(NULL), m_texture(NULL), m_buffer1(NULL), m_buffer2(NULL){
-
-                                                                                           };
+    Screen::Screen() : m_window(NULL), m_renderer(NULL), m_texture(NULL), m_buffer1(NULL), m_buffer2(NULL){};
 
     bool Screen::setup()
     {
