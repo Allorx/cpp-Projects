@@ -32,8 +32,8 @@ CMAKE_BUILD_TYPE:STRING=Release
 //Enable/Disable color output during build.
 CMAKE_COLOR_MAKEFILE:BOOL=ON
 
-//No help, variable specified on the command line.
-CMAKE_CXX_COMPILER:FILEPATH=/usr/bin/clang++
+//CXX compiler
+CMAKE_CXX_COMPILER:STRING=/usr/bin/clang++
 
 //Flags used by the CXX compiler during all build types.
 CMAKE_CXX_FLAGS:STRING=
@@ -50,8 +50,8 @@ CMAKE_CXX_FLAGS_RELEASE:STRING=-O3 -DNDEBUG
 //Flags used by the CXX compiler during RELWITHDEBINFO builds.
 CMAKE_CXX_FLAGS_RELWITHDEBINFO:STRING=-O2 -g -DNDEBUG
 
-//No help, variable specified on the command line.
-CMAKE_C_COMPILER:FILEPATH=/usr/bin/clang
+//C compiler
+CMAKE_C_COMPILER:STRING=/usr/bin/clang
 
 //Flags used by the C compiler during all build types.
 CMAKE_C_FLAGS:STRING=
@@ -142,7 +142,7 @@ CMAKE_OSX_DEPLOYMENT_TARGET:STRING=
 
 //The product will be built against the headers and libraries located
 // inside the indicated SDK.
-CMAKE_OSX_SYSROOT:PATH=/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk
+CMAKE_OSX_SYSROOT:PATH=/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk
 
 //Value Computed by CMake
 CMAKE_PROJECT_DESCRIPTION:STATIC=
@@ -325,7 +325,7 @@ Game_SOURCE_DIR:STATIC=/Users/Alex/Documents/GitHub/cpp-Projects/SDLParticles/SD
 HGCOMMAND:FILEPATH=HGCOMMAND-NOTFOUND
 
 //Command to build the project
-MAKECOMMAND:STRING=/usr/local/Cellar/cmake/3.18.4/bin/cmake --build . --config "${CTEST_CONFIGURATION_TYPE}" -- -i
+MAKECOMMAND:STRING=/usr/local/Cellar/cmake/3.19.7/bin/cmake --build . --config "${CTEST_CONFIGURATION_TYPE}" -- -i
 
 //Path to the memory checking command, used for memory error detection.
 MEMORYCHECK_COMMAND:FILEPATH=MEMORYCHECK_COMMAND-NOTFOUND
@@ -350,18 +350,6 @@ SLURM_SRUN_COMMAND:FILEPATH=SLURM_SRUN_COMMAND-NOTFOUND
 
 //Path to a program.
 SVNCOMMAND:FILEPATH=SVNCOMMAND-NOTFOUND
-
-//Path to a program.
-file_cmd:FILEPATH=/usr/bin/file
-
-//Path to a program.
-find_cmd:FILEPATH=/usr/bin/find
-
-//Path to a program.
-gp_cmd:FILEPATH=/usr/bin/otool
-
-//Path to a program.
-otool_cmd:FILEPATH=/usr/bin/otool
 
 
 ########################
@@ -419,7 +407,7 @@ CMAKE_C_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_DLLTOOL
 CMAKE_DLLTOOL-ADVANCED:INTERNAL=1
 //Path to cache edit program executable.
-CMAKE_EDIT_COMMAND:INTERNAL=/usr/local/Cellar/cmake/3.18.4/bin/ccmake
+CMAKE_EDIT_COMMAND:INTERNAL=/usr/local/Cellar/cmake/3.19.7/bin/ccmake
 //ADVANCED property for variable: CMAKE_EXE_LINKER_FLAGS
 CMAKE_EXE_LINKER_FLAGS-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_EXE_LINKER_FLAGS_DEBUG
@@ -579,10 +567,4 @@ SLURM_SBATCH_COMMAND-ADVANCED:INTERNAL=1
 SLURM_SRUN_COMMAND-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: SVNCOMMAND
 SVNCOMMAND-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: file_cmd
-file_cmd-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: find_cmd
-find_cmd-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: otool_cmd
-otool_cmd-ADVANCED:INTERNAL=1
 
