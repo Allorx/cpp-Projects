@@ -1,19 +1,17 @@
+
+# Consider dependencies only in project.
+set(CMAKE_DEPENDS_IN_PROJECT_ONLY OFF)
+
 # The set of languages for which implicit dependencies are needed:
 set(CMAKE_DEPENDS_LANGUAGES
-  "CXX"
   )
-# The set of files for implicit dependencies of each language:
-set(CMAKE_DEPENDS_CHECK_CXX
-  "/Users/Alex/Documents/GitHub/cpp-Projects/SDLParticles/SDL/src/Swarm.cpp" "/Users/Alex/Documents/GitHub/cpp-Projects/SDLParticles/SDL/build/CMakeFiles/Game.dir/src/Swarm.cpp.o"
-  "/Users/Alex/Documents/GitHub/cpp-Projects/SDLParticles/SDL/src/main.cpp" "/Users/Alex/Documents/GitHub/cpp-Projects/SDLParticles/SDL/build/CMakeFiles/Game.dir/src/main.cpp.o"
-  "/Users/Alex/Documents/GitHub/cpp-Projects/SDLParticles/SDL/src/particle.cpp" "/Users/Alex/Documents/GitHub/cpp-Projects/SDLParticles/SDL/build/CMakeFiles/Game.dir/src/particle.cpp.o"
-  "/Users/Alex/Documents/GitHub/cpp-Projects/SDLParticles/SDL/src/screen.cpp" "/Users/Alex/Documents/GitHub/cpp-Projects/SDLParticles/SDL/build/CMakeFiles/Game.dir/src/screen.cpp.o"
-  )
-set(CMAKE_CXX_COMPILER_ID "AppleClang")
 
-# The include file search paths:
-set(CMAKE_CXX_TARGET_INCLUDE_PATH
-  "../MacOS/include"
+# The set of dependency files which are needed:
+set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "/Users/Alex/Documents/GitHub/cpp-Projects/SDLParticles/SDL/src/Swarm.cpp" "CMakeFiles/Game.dir/src/Swarm.cpp.o" "gcc" "CMakeFiles/Game.dir/src/Swarm.cpp.o.d"
+  "/Users/Alex/Documents/GitHub/cpp-Projects/SDLParticles/SDL/src/main.cpp" "CMakeFiles/Game.dir/src/main.cpp.o" "gcc" "CMakeFiles/Game.dir/src/main.cpp.o.d"
+  "/Users/Alex/Documents/GitHub/cpp-Projects/SDLParticles/SDL/src/particle.cpp" "CMakeFiles/Game.dir/src/particle.cpp.o" "gcc" "CMakeFiles/Game.dir/src/particle.cpp.o.d"
+  "/Users/Alex/Documents/GitHub/cpp-Projects/SDLParticles/SDL/src/screen.cpp" "CMakeFiles/Game.dir/src/screen.cpp.o" "gcc" "CMakeFiles/Game.dir/src/screen.cpp.o.d"
   )
 
 # Targets to which this target links.

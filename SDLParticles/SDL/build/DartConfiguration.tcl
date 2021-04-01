@@ -26,7 +26,7 @@ SubmitURL: http://
 NightlyStartTime: 00:00:00 EDT
 
 # Commands for the build/test/submit cycle
-ConfigureCommand: "/usr/local/Cellar/cmake/3.19.7/bin/cmake" "/Users/Alex/Documents/GitHub/cpp-Projects/SDLParticles/SDL"
+ConfigureCommand: "/usr/local/Cellar/cmake/3.20.0/bin/cmake" "/Users/Alex/Documents/GitHub/cpp-Projects/SDLParticles/SDL"
 MakeCommand: /usr/local/Cellar/cmake/3.19.7/bin/cmake --build . --config "${CTEST_CONFIGURATION_TYPE}" -- -i
 DefaultCTestConfigurationType: Release
 
@@ -82,10 +82,6 @@ MemoryCheckSuppressionFile:
 # Coverage
 CoverageCommand: /usr/bin/gcov
 CoverageExtraFlags: -l
-
-# Cluster commands
-SlurmBatchCommand: SLURM_SBATCH_COMMAND-NOTFOUND
-SlurmRunCommand: SLURM_SRUN_COMMAND-NOTFOUND
 
 # Testing options
 # TimeOut is the amount of time in seconds to wait for processes
