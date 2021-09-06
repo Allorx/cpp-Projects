@@ -3,6 +3,6 @@ A small fun SDL2 project with cpu particles that swirl and change colour - looks
 
 ![Alt Text](https://github.com/Allorx/cpp-Projects/blob/master/SDLParticles/sdl.gif)
 
-- Make sure SDL2 is installed with "brew install sdl2"
 - CMake is included for multiplatform compiling and building of app bundles
-- If opening Xcode project make sure library and header files are in the correct path and includes are correct i.e. "SDL2/SDL.h"
+
+- If opening Xcode project (needs independent setup) make sure library and header files are in the correct path and includes are correct i.e. "SDL2/SDL.h", make sure SDL2 is installed with "brew install sdl2"
