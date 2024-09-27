@@ -3,7 +3,7 @@ This follows from ![C++ Tutorial for Complete Beginners](https://www.udemy.com/c
 
 A small fun SDL2 project with cpu particles that swirl and change colour - looks like a screensaver; good for understanding basic cpu rendering using SDL2 and multi-platform building bundles using CMake.
 
-![Alt Text](https://github.com/Allorx/cpp-Projects/blob/master/SDLParticles/sdl.gif)
+![SDL particales swirling](https://github.com/Allorx/cpp-Projects/blob/master/SDLParticles/sdl.gif)
 
 - CMake is included for multiplatform compiling and building of app bundles
 
